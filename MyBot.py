@@ -10,7 +10,7 @@ myID, gameMap = getInit()
 
 with open(os.devnull, 'w') as sys.stderr:
     from keras.models import load_model
-    model = load_model('model8.h5')
+    model = load_model('model6.h5')
 
 model.predict(np.random.randn(1,input_dim)).shape # make sure model is compiled during init
 
